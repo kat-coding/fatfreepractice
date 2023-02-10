@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+</head>
+<body>
+<form action="#" method="post" class="form-horizontal">
+
+    <!-- get food -->
+    <div class="form-group">
+        <label for="pet" class="col-sm-4 control-label">What would you name your pet?</label>
+        <div class="col-sm-4"><input class="form-control" type="text"
+                                     name="pet" id="pet" ></div>
+    </div>
+    <br>
+
+    <!-- get meal -->
+    <div class="form-group">
+        <label class="col-sm-4 control-label">Select a pet species:</label>
+        <div class="col-sm-4">
+            <label><input type="radio" name="pet" value="cat">Cat</label><br>
+            <label><input type="radio" name="pet" value="dog">Dog</label><br>
+            <label><input type="radio" name="pet" value="fish">Fish</label><br>
+        </div>
+    </div>
+    <br>
+    <h3>Colors you are interested in:</h3>
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="blue" name="colors[]">
+        <label class="form-check-label" >
+            Blue
+        </label>
+    </div>
+
+    <!-- submit button -->
+    <div class="col-xs-3 ">
+        <button class="btn btn-primary" type="submit">Summary</button>
+    </div>
+</form>
+</body>
+</html>
